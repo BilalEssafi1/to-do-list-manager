@@ -21,8 +21,6 @@ The application continously prompts users until they choose to exit.
 - Show All Tasks: View all tasks along with their current status. 
 -Exit Option: Users can exit the application when easily when finished. 
 
-![Features](images/features.png)
-
 ## How to use the To-Do List Manager
 
 1. Interact with the Menu:
