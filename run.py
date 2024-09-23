@@ -21,3 +21,17 @@ def show_tasks():
             print(f"{idx +1}. {task['task']} - {status}")
         print()
 
+def remove_task(index):
+    """
+    Removes a task from the to-do list by its index.
+    Check if the index is valid before attempting removal. 
+    """
+    try:
+        task = to_do_list.pop(index)
+        print(f'Task "{task["task"]}" removed successfully!\n')
+    except IndexError:
+        print("Invalid task number. Please try again.\n")
+
+add_task("Go to the gym")
+show_tasks()
+remove_task(0)
