@@ -30,8 +30,18 @@ def remove_task(index):
         task = to_do_list.pop(index)
         print(f'Task "{task["task"]}" removed successfully!\n')
     except IndexError:
-        print("Invalid task number. Please try again.\n")
+        print("Invalid task number. Please try again!\n")
 
-add_task("Go to the gym")
-show_tasks()
-remove_task(0)
+def mark_task_done(index):
+    """
+    Mark a task as done by its index.
+    Check if the index is valid before marking it as complete
+    """
+    try: 
+        to_do_list[index]['done'] = True
+        print(f'Task "{to_do_list[index]["task"]} marked as completed!\n')
+    except IndexError:
+        print("Invalid task number. Please try again!\n")
+
+add_task("Going to the gym")
+mark_task_done(0)
