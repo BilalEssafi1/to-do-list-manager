@@ -76,8 +76,8 @@ def main():
                 task = input("Enter the task description: \n")
 
                 if not task.strip():
-                    print("Task description cannot be empty. Please try again!")
-                
+                    print("Task description can't be empty. Please try again!")
+
                 else:
                     add_task(task)
                     break
@@ -110,3 +110,4 @@ def main():
 
 
 main()
+
