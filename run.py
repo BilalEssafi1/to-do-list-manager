@@ -43,5 +43,15 @@ def mark_task_done(index):
     except IndexError:
         print("Invalid task number. Please try again!\n")
 
-add_task("Going to the gym")
-mark_task_done(0)
+def display_menu():
+    """
+    Displays the menu options to the user.
+    """
+    print("To-Do List Manager:")
+    print("1. Add a new task")
+    print("2. Remove a task")
+    print("3. Mark a task as done")
+    print("4. Show all tasks")
+    print("5. Exit\n")
+
+display_menu()
