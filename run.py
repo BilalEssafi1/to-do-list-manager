@@ -72,8 +72,15 @@ def main():
         choice = input("Choose an option(1-5): \n")
 
         if choice == "1":
-            task = input("Enter the task description: \n")
-            add_task(task)
+            while True:
+                task = input("Enter the task description: \n")
+
+                if not task.strip():
+                    print("Task description cannot be empty. Please try again!")
+                
+                else:
+                    add_task(task)
+                    break
 
         elif choice == "2":
             show_tasks()
