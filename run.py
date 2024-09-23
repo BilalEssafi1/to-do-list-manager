@@ -6,3 +6,4 @@ def add_task(task):
     """
     to_do_list.append({'task': task, 'done': False})
     print(f'Task {task} added successfully!\n')
+
