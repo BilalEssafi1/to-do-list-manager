@@ -54,4 +54,43 @@ def display_menu():
     print("4. Show all tasks")
     print("5. Exit\n")
 
-display_menu()
+
+def main():
+    """
+    Main function that runs the To-Do List Manager.
+    It continously prompts the user for input and calls the appropriate functions.
+    """
+    while True:
+        display_menu()
+        choice = input("Choose an option(1-5): \n")
+
+        if choice == "1":
+            task = input("Enter the task description: \n")
+            add_task(task)
+
+        elif choice == "2":
+            show_tasks()
+            try:
+                task_num = int(input("Enter the task number to remove: "))-1
+                remove_task(task_num)
+            except ValueError:
+                    print("Please enter a valid number.\n")
+        
+        elif choice == "3":
+            show_tasks()
+            try:
+                task_num = int(input("Enter the task number to mark as done: "))
+                mark_task_done(task_num)
+            except ValueError:
+                print("Please enter a valid number.\n")
+        
+        elif choice == "4":
+            show_tasks()
+        
+        elif choice == "5":
+            print("Exiting the to-do list")
+            break
+
+main()
+
+
