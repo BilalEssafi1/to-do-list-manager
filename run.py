@@ -1,4 +1,6 @@
 to_do_list = []
+
+
 def add_task(task):
     """
     Add a new task to the to-do list.
@@ -6,6 +8,7 @@ def add_task(task):
     """
     to_do_list.append({'task': task, 'done': False})
     print(f'Task {task} added successfully!\n')
+
 
 def show_tasks():
     """
@@ -21,10 +24,11 @@ def show_tasks():
             print(f"{idx +1}. {task['task']} - {status}")
         print()
 
+
 def remove_task(index):
     """
     Removes a task from the to-do list by its index.
-    Check if the index is valid before attempting removal. 
+    Check if the index is valid before attempting removal.
     """
     try:
         task = to_do_list.pop(index)
@@ -32,16 +36,18 @@ def remove_task(index):
     except IndexError:
         print("Invalid task number. Please try again!\n")
 
+
 def mark_task_done(index):
     """
     Mark a task as done by its index.
     Check if the index is valid before marking it as complete
     """
-    try: 
+    try:
         to_do_list[index]['done'] = True
         print(f'Task "{to_do_list[index]["task"]} marked as completed!\n')
     except IndexError:
         print("Invalid task number. Please try again!\n")
+
 
 def display_menu():
     """
@@ -58,7 +64,8 @@ def display_menu():
 def main():
     """
     Main function that runs the To-Do List Manager.
-    It continously prompts the user for input and calls the appropriate functions.
+    It continously prompts the user for input and calls the
+    appropriate functions.
     """
     while True:
         display_menu()
@@ -74,19 +81,19 @@ def main():
                 task_num = int(input("Enter the task number to remove:\n"))-1
                 remove_task(task_num)
             except ValueError:
-                    print("Please enter a valid number.\n")
-        
+                print("Please enter a valid number.\n")
+
         elif choice == "3":
             show_tasks()
             try:
-                task_num = int(input("Enter the task number to mark as done:\n"))-1
+                task_num = int(input("Enter task number to mark as done:\n"))-1
                 mark_task_done(task_num)
             except ValueError:
                 print("Please enter a valid number.\n")
-        
+
         elif choice == "4":
             show_tasks()
-        
+
         elif choice == "5":
             print("Exiting the to-do list\n")
             break
@@ -94,6 +101,5 @@ def main():
         else:
             print("Invalid option. Please choose a number between 1 and 5.\n")
 
+
 main()
-
-
