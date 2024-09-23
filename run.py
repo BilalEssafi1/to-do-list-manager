@@ -21,5 +21,3 @@ def show_tasks():
             print(f"{idx +1}. {task['task']} - {status}")
         print()
 
-add_task("Go to the gym")
-show_tasks()
