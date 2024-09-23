@@ -91,6 +91,9 @@ def main():
             print("Exiting the to-do list\n")
             break
 
+        else:
+            print("Invalid option. Please choose a number between 1 and 5.\n")
+
 main()
 
 
