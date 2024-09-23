@@ -71,7 +71,7 @@ def main():
         elif choice == "2":
             show_tasks()
             try:
-                task_num = int(input("Enter the task number to remove: "))-1
+                task_num = int(input("Enter the task number to remove:\n"))-1
                 remove_task(task_num)
             except ValueError:
                     print("Please enter a valid number.\n")
@@ -79,7 +79,7 @@ def main():
         elif choice == "3":
             show_tasks()
             try:
-                task_num = int(input("Enter the task number to mark as done: "))
+                task_num = int(input("Enter the task number to mark as done:\n"))-1
                 mark_task_done(task_num)
             except ValueError:
                 print("Please enter a valid number.\n")
@@ -88,7 +88,7 @@ def main():
             show_tasks()
         
         elif choice == "5":
-            print("Exiting the to-do list")
+            print("Exiting the to-do list\n")
             break
 
 main()
