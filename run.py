@@ -1,3 +1,8 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+to_do_list = []
+def add_task(task):
+    """
+    Add a new task to the to-do list.
+    The task is stored as a dictionary with 'task' and 'done' status.
+    """
+    to_do_list.append({'task': task, 'done': False})
+    print(f'Task {task} added successfully!\n')
