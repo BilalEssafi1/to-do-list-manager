@@ -5,6 +5,13 @@ The To-Do List Manager is a simple command-line based To-Do List application wri
 
 ![Responsive Design](images/responsive-design.png)
 
+## Target Audience
+
+The tool is designed for individuals, student, and professionals who need a simple yet effective way to manage their personal and work-related tasks. 
+
+## Use Case
+A student uses this to-do list manager to keep track of assignments and exam preparations. The tool allows them to add tasks and mark them as complete once they have finalized them, ensuring that no important coursework is overlooked. Additionally, it helps them manage personal commitments and extracurricular activities, ensuring they stay organized and maintain a balanced schedule throughout the semester.
+
 ## Rules of the Application
 
 The To-Do-List Manager operates on a straightforward premise:
