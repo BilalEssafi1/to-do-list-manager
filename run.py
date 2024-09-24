@@ -44,7 +44,7 @@ def mark_task_done(index):
     """
     try:
         to_do_list[index]['done'] = True
-        print(f'Task "{to_do_list[index]["task"]} marked as completed!\n')
+        print(f'Task "{to_do_list[index]["task"]}" marked as completed!\n')
     except IndexError:
         print("Invalid task number. Please try again!\n")
 
@@ -84,35 +84,24 @@ def main():
                     break
 
         elif choice == "2":
-            while True:
-                show_tasks()
-                if not to_do_list:
-                    print("No tasks to remove.\n")
-                    break
-
-                try:
-                    task_num = int(input("Enter the task number to remove:\n"))-1
-                    remove_task(task_num)
-                except ValueError:
-                    print("Please enter a valid number.\n")
-                except IndexError:
-                    print("Invalid task number. Please try again!\n")
+            show_tasks()
+            try:
+                task_num = int(input("Enter the task number to remove:\n"))-1
+                remove_task(task_num)
+            except ValueError:
+                print("Please enter a valid number.\n")
+            except IndexError:
+                print("Invalid task number. Please try again!\n")
 
         elif choice == "3":
-            while True:
-                show_tasks()
-                if not to_do_list:
-                    print("No tasks to mark as done.\n")
-                    break
-
-                try:
-                    task_num = int(input("Enter task number to mark as done:\n"))-1
-                    mark_task_done(task_num)
-                    break
-                except ValueError:
-                    print("Please enter a valid number.\n")
-                except IndexError:
-                    print("Invalid task number. Please try again!\n")
+            show_tasks()
+            try:
+                task_num = int(input("Enter task number to mark as done:\n"))-1
+                mark_task_done(task_num)
+            except ValueError:
+                print("Please enter a valid number.\n")
+            except IndexError:
+                print("Invalid task number. Please try again!\n")
 
         elif choice == "4":
             show_tasks()
