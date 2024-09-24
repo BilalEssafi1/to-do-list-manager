@@ -67,13 +67,13 @@ Solved Bugs
 ## Technologies Used
 Python
 
-## Programs Used
+## Development Tools
 ### Am I Responsive
 - [Am I Responsive](https://ui.dev/amiresponsive) was used to see how the command line application looks on different screen sizes.
 ### GitPod
-- [GitPod](https://www.gitpod.io/) was used to write the code for this websitem and to commit and push the code to Github.
+- [GitPod](https://www.gitpod.io/) was used to write the code for this application and to commit and push the code to Github.
 ### GitHub
-- [GitHub](https://github.com/) was used to store this website.
+- [GitHub](https://github.com/) was used to store this application.
 ### Heroku
 - [Heroku](https://www.heroku.com) was used to deploy the application. 
 
