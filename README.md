@@ -53,7 +53,7 @@ I have tested my Pythonn code through various means:
 
 ![Validation](images/validation.png)
 
-- Manual Testing of Functions: Inputs were tested against expected outputs to confirm functionality. 
+- Manual Testing of Functions: Inputs were tested against expected outputs to confirm functionality. Please refer to [TESTING.md](TESTING.md) file for all testing carried out. 
 
 - Gameplay Testing: The application was run with both normal and edge case inputs to ensure it handles errors appropriately.
 
@@ -64,7 +64,7 @@ I have tested my Pythonn code through various means:
 - Empty Task Submissions: While testing the "Add Task" functionality, I discovered that the application accepted empty submissions. I addressed this by using the strip() method to check for empty spaces. Now, an error message is displayed when a user attempts to add an empty task.
 - Task Description Length Validation: During testing, I found that the application did not enforce a maximum character limit for task descriptions, allowinng users to input excessively long texts. To resolve this issue, I implemented a character limit validation, ensuring that task descriptions do not exceed 80 characters. If a user attempts to enter a longer description, an error message is now displayed, prompting them to revise their input. 
 
-## Unsolved Bugs
+## Known Bugs
 Invalid Input Handling for Task Number: During testing, I found that the application correctly handles invalid task numbers when removing or marking tasks as done. However, there's a minor issue: after showing the error message for an invalid task number, the user is automatically navigated back to the main menu instead of being allowed to retry entering a valid number. This prevents users from immediately correcting their input without returning to the main menu. While this bug is not critical, it slightly affects the user flow.
 
 ## Technologies Used
