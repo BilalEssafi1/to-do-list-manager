@@ -64,6 +64,19 @@ Solved Bugs
 - Empty Task Submissions: While testing the "Add Task" functionality, I discovered that the application accepted empty submissions. I addressed this by using the strip() method to check for empty spaces. Now, an error message is displayed when a user attempts to add an empty task.
 - Task Description Length Validation: During testing, I found that the application did not enforce a maximum character limit for task descriptions, allowinng users to input excessively long texts. To resolve this issue, I implemented a character limit validation, ensuring that task descriptions do not exceed 80 characters. If a user attempts to enter a longer description, an error message is now displayed, prompting them to revise their input. 
 
+## Technologies Used
+Python
+
+## Programs Used
+### Am I Responsive
+- [Am I Responsive](https://ui.dev/amiresponsive) was used to see how the command line application looks on different screen sizes.
+### GitPod
+- [GitPod](https://www.gitpod.io/) was used to write the code for this websitem and to commit and push the code to Github.
+### GitHub
+- [GitHub](https://github.com/) was used to store this website.
+### Heroku
+- [Heroku](https://www.heroku.com) was used to deploy the application. 
+
 ## Deployment
 This project was deployed using Code Institute's mock terminal for Heroku.
 
