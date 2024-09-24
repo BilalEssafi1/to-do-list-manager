@@ -78,7 +78,7 @@ def main():
                 if not task.strip():
                     print("Task description can't be empty. Please try again!")
                 elif len(task) > 80:
-                    print("Task description cannot exceed 80 characters. Please try again!")
+                    print("Description can't exceed 80 characters. Please try again!")
                 else:
                     add_task(task)
                     break
@@ -111,4 +111,3 @@ def main():
 
 
 main()
-

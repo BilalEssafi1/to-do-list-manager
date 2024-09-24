@@ -68,7 +68,7 @@ Solved Bugs
 This project was deployed using Code Institute's mock terminal for Heroku.
 
 - Steps for deployment:
-    - For or clone this repository 
+    - Fork or clone this repository 
     - Create a new Heroku app
     - Set the buildblacks to Python and NodeJS in that order
     - Link the Heroku app to the repository
@@ -76,4 +76,4 @@ This project was deployed using Code Institute's mock terminal for Heroku.
 
 ## Credits
 - Code Institute for the deployment terminal and the [Python template](https://github.com/Code-Institute-Org/p3-template).
-- The code and idea of the to-do list manager came originally from [Projects Explained](https://www.youtube.com/watch?v=bfHAeWZ7oAY). In addition, the code to to check for empty spaces came from [w3school](https://www.w3schools.com/python/ref_string_strip.asp). However, all the code has been modified to suit the specific needs of this application and it is no longer in its original form.
+- The code and idea of the to-do list manager came originally from [Projects Explained](https://www.youtube.com/watch?v=bfHAeWZ7oAY). In addition, the code to check for empty spaces came from [w3school](https://www.w3schools.com/python/ref_string_strip.asp) and the code to limit the characters came from [stackoverflow](https://stackoverflow.com/questions/28465779/how-do-i-limit-the-amount-of-letters-in-a-string)  However, all the code has been modified to suit the specific needs of this application and it is no longer in its original form.
