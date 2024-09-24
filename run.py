@@ -84,28 +84,27 @@ def main():
                     break
 
         elif choice == "2":
-            show_tasks()
             while True:
                 show_tasks()
                 if not to_do_list:
                     print("No tasks to remove.\n")
                     break
+
                 try:
                     task_num = int(input("Enter the task number to remove:\n"))-1
                     remove_task(task_num)
-                    break
                 except ValueError:
                     print("Please enter a valid number.\n")
                 except IndexError:
                     print("Invalid task number. Please try again!\n")
 
         elif choice == "3":
-            show_tasks()
             while True:
                 show_tasks()
                 if not to_do_list:
                     print("No tasks to mark as done.\n")
                     break
+
                 try:
                     task_num = int(input("Enter task number to mark as done:\n"))-1
                     mark_task_done(task_num)
