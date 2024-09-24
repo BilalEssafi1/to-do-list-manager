@@ -81,14 +81,36 @@ Python
 - [Heroku](https://www.heroku.com) was used to deploy the application. 
 
 ## Deployment
-This project was deployed using Code Institute's mock terminal for Heroku.
+The site was developed using [GitPod](https://www.gitpod.io/) and pushed to GitHub through a GitPod terminal. This project was deployed using Code Institute's mock terminal for Heroku.
 
 - Steps for deployment:
-    - Fork or clone this repository 
-    - Create a new Heroku app
-    - Set the buildblacks to Python and NodeJS in that order
-    - Link the Heroku app to the repository
-    - Click on Deploy
+    1. Login to [Heroku](https://www.heroku.com)
+    2. Create a new Heroku app:
+    - Click on "New" in the top-right corner and select "Create new app."
+    - Provide a unique app name.
+    - Select the appropriate region.
+    - Click on "Create app."
+    3. Navigate to the Settings tab:
+    - Under "Buildpacks," click "Add buildpack" and select Python, then NodeJS (in that order).
+    4. Navigate to the Deploy tab:
+    - Under "Deployment method," choose GitHub.
+    - Search for the appropriate repository and click "Connect" to link the Heroku app to the repository.
+
+- How to Fork this Project:
+    1. Login to [GitHub](https://github.com/).
+    2. Navigate to the repository: https://github.com/BilalEssafi1/to-do-list-manager.
+    3. Click on the Fork button in the top-right corner.  
+    4. Select Create a new fork.
+
+- How to Clone this Project:
+    1. Login to [GitHub](https://github.com/).
+    2. Go to the repository: Login to https://github.com/BilalEssafi1/to-do-list-manager.
+    3. Click the green Code button.
+    4. Under the Clone section, choose the method to clone the repository (HTTPS, SSH, or GitHub CLI).
+    5. Open the terminal in your code editor
+    - Use the cd command to navigate to the directory where you want to clone the repository.
+    6. Run the git clone command followed by the repository URL you copied, and press Enter. 
+
 
 ## Credits
 - Code Institute for the deployment terminal and the [Python template](https://github.com/Code-Institute-Org/p3-template).
